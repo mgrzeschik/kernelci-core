@@ -1688,6 +1688,7 @@ test_configs:
   - device_type: imx6qp-wandboard-revd1
     test_plans:
       - baseline
+      - baseline-nfs
 
   - device_type: imx6q-var-dt6customboard
     test_plans:
