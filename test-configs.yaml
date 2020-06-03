@@ -1212,6 +1212,13 @@ device_types:
       - blocklist: *allmodconfig_filter
       - blocklist: {defconfig: ['multi_v7_defconfig+CONFIG_SMP=n']}
 
+  stm32mp157c-lxa-mc1:
+    mach: stm32
+    class: arm-dtb
+    boot_method: barebox
+    filters:
+      - blocklist: {defconfig: ['stm32_defconfig']}
+
   stm32mp157c-dk2:
     mach: stm32
     class: arm-dtb
@@ -2067,6 +2074,10 @@ test_configs:
     test_plans:
       - baseline
       - baseline-nfs
+
+  - device_type: stm32mp157c-lxa-mc1
+    test_plans:
+      - baseline
 
   - device_type: stm32mp157c-dk2
     test_plans:
