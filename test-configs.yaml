@@ -1746,6 +1746,7 @@ test_configs:
   - device_type: imx8mq-zii-ultra-zest
     test_plans:
       - baseline
+      - baseline-nfs
 
   - device_type: imx8mn-ddr4-evk
     test_plans:
